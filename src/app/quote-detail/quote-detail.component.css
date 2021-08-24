@@ -1,0 +1,20 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); 
+#del{
+   color: red;
+   border-radius: 20px;
+
+}
+
+ #like{
+   font-size: 16px;
+ }
+ #dislike{
+   font-size: 16px;
+ }
+ .di{
+   color: white;
+   padding-top: 2px;
+ }
+ @media only screen and (max-width: 600px) {
+   #rem {  padding-top: 8px;}
+ }
