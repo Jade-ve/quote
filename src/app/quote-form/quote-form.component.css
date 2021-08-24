@@ -1,1 +1,24 @@
 
+.btn{
+    background-color: #36615d;
+    border-radius: 50px;
+    color: white;
+}
+.quotefrm{
+    background: white;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.form {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    background-color: papayawhip;
+}
