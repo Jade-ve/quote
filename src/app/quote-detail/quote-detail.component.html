@@ -1,0 +1,26 @@
+<div class="card-subtitle text-muted font-bold text-center mb-3">
+    <h4> {{quote.quote}} </h4>
+    <span>Posted: {{quote.datePosted|date:'short'}} <br>{{quote.datePosted}}</span>
+    <span> days ago.</span>
+  
+  </div>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-3">
+            <button type="button" class="btn btn-sm btn-success di"><i class="fa fa-thumbs-up"
+                (click)="incrementLikes()">{{quote.likes}}</i></button>
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="btn btn-sm btn-danger di"><i class="fa fa-thumbs-down"
+                (click)="incrementDislikes()">{{quote.dislikes}}</i></button>
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-md-3 text-right" id="rem">
+        <button (click)='quoteDelete(true)' id="del">Delete</button>
+    </div>
+      </div>
+    </div>

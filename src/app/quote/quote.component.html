@@ -1,0 +1,26 @@
+<div class="container text-center p-3">
+    <h1 class="text-dark">Quote Generator</h1>
+</div>
+<div class="container">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <div class="row">
+        <div *ngFor='let quote of sortQuotes;let i = index' class="col-md-4 mb-4">
+            <div class="card text-white shadow p-3 mb-5 bg-light rounded">
+                <!-- <div class="card-header text-dark">
+                    Quote
+                </div> -->
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="text-dark">{{quote.name}}</p>
+                        <button (click)='Details(i)' class="btn btn-secondary">See More</button>
+                        <h4 class="blockquote-footer mt-3"><cite title="Source Title">{{quote.author}} </cite>
+                        </h4>
+                    </blockquote>
+                </div>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
